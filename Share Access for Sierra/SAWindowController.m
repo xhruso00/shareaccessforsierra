@@ -81,7 +81,9 @@
 - (void)sharingService:(NSSharingService *)sharingService willShareItems:(NSArray *)items
 {
     if (![self isAlreadyShared]) {
+        //NASTY hack that provides incompatible delegate
         [sharingService setValue:self forKey:@"_cloudKitProvider"];
+        //NASTY Hack that prevents crashing once user interacts with Apple's sharing window
         [self performSelector:@selector(resetProvider:) withObject:sharingService afterDelay:0.2];
     }
 }
