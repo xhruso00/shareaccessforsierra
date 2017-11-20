@@ -76,7 +76,7 @@
 
 - (IBAction)sendFeedback:(id)sender
 {
-    NSString *URLString = @"mailto:xhruso00@gmail.com?subject=Share%20Access%20Question&body=Hi%20team,%20I%20need%20...";
+    NSString *URLString = @"https://github.com/xhruso00/shareaccessforsierra/issues";
     NSURL *URL = [NSURL URLWithString:URLString];
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
