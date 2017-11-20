@@ -4,5 +4,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (IBAction)share:(NSURL *)URL;
+
 @end
 
