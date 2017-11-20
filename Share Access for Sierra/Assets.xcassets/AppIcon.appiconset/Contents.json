@@ -26,15 +26,13 @@
       "scale" : "1x"
     },
     {
-      "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "icloud_drive_icon@2x.png",
+      "size" : "128x128",
       "scale" : "2x"
     },
     {
-      "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "icloud_drive_icon@2x-1.png",
+      "size" : "256x256",
       "scale" : "1x"
     },
     {

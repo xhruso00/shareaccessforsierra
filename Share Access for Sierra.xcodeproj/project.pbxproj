@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D22FE6A61FC2F157001DDA49 /* SAWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22FE6A41FC2F156001DDA49 /* SAWindowController.m */; };
 		D22FE6A71FC2F157001DDA49 /* FinderSync.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22FE6A51FC2F157001DDA49 /* FinderSync.xib */; };
+		D237A43C1FC338FA001C9BD6 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D237A43B1FC338FA001C9BD6 /* AppIcon.icns */; };
 		D2BA25D21FC1D48D002C0CD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA25D11FC1D48D002C0CD0 /* AppDelegate.m */; };
 		D2BA25D41FC1D48D002C0CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BA25D31FC1D48D002C0CD0 /* Assets.xcassets */; };
 		D2BA25D71FC1D48D002C0CD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA25D51FC1D48D002C0CD0 /* MainMenu.xib */; };
@@ -48,6 +49,7 @@
 		D22FE6A31FC2F156001DDA49 /* SAWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWindowController.h; sourceTree = "<group>"; };
 		D22FE6A41FC2F156001DDA49 /* SAWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWindowController.m; sourceTree = "<group>"; };
 		D22FE6A51FC2F157001DDA49 /* FinderSync.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinderSync.xib; sourceTree = "<group>"; };
+		D237A43B1FC338FA001C9BD6 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		D2BA25CD1FC1D48D002C0CD0 /* Share Access for Sierra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Access for Sierra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BA25D01FC1D48D002C0CD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2BA25D11FC1D48D002C0CD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				D22FE6A51FC2F157001DDA49 /* FinderSync.xib */,
 				D22FE6A31FC2F156001DDA49 /* SAWindowController.h */,
 				D22FE6A41FC2F156001DDA49 /* SAWindowController.m */,
+				D237A43B1FC338FA001C9BD6 /* AppIcon.icns */,
 				D2BA25D81FC1D48D002C0CD0 /* Info.plist */,
 				D2BA25D91FC1D48D002C0CD0 /* main.m */,
 				D2BA25DB1FC1D48D002C0CD0 /* Share_Access_for_Sierra.entitlements */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22FE6A71FC2F157001DDA49 /* FinderSync.xib in Resources */,
+				D237A43C1FC338FA001C9BD6 /* AppIcon.icns in Resources */,
 				D2BA25D41FC1D48D002C0CD0 /* Assets.xcassets in Resources */,
 				D2BA25D71FC1D48D002C0CD0 /* MainMenu.xib in Resources */,
 			);
