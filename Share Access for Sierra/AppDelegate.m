@@ -43,6 +43,7 @@
     }
     [_windowController setFileURL:URL];
     [_windowController showWindow:self];
+    [[self window] close];
     
 }
 
@@ -81,5 +82,9 @@
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
 
 @end
