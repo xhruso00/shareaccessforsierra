@@ -78,6 +78,11 @@
     }
 }
 
+- (nullable NSWindow *)sharingService:(NSSharingService *)sharingService sourceWindowForShareItems:(NSArray *)items sharingContentScope:(NSSharingContentScope *)sharingContentScope
+{
+    return [self window];
+}
+
 - (void)sharingService:(NSSharingService *)sharingService willShareItems:(NSArray *)items
 {
     if (![self isAlreadyShared]) {
