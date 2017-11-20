@@ -54,25 +54,8 @@
 
 - (IBAction)revealExtensions:(id)sender
 {
-    NSError *error;
-    NSAppleScript* scriptObject = [[NSAppleScript alloc] initWithSource:
-                                   @"\
-                                   tell application \"System Preferences\"\n\
-                                   activate\n\
-                                   set the current pane to pane id \"com.apple.preferences.extensions\"\n\
-                                   reveal anchor \"Extensions\" of pane id \"com.apple.preferences.extensions\"\n\
-                                   end tell"];
-
-    if (error) {
-        [[NSAlert alertWithError:error] runModal];
-    } else {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSAppleEventDescriptor* returnDescriptor = NULL;
-            NSDictionary* errorDict;
-            returnDescriptor = [scriptObject executeAndReturnError: &errorDict];
-        });
-    }
-    
+    NSURL *URL = [NSURL fileURLWithPath:@"/System/Library/PreferencePanes/Extensions.prefPane" isDirectory:YES];
+    [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
 - (IBAction)sendFeedback:(id)sender
