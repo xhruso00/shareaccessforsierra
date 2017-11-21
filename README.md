@@ -13,6 +13,8 @@ Due to bug in implementation, there are some options for unshared file. File tha
 
 Please open an issue if you find a bug that can be fixed.
 
+If someone knows how to get native share support in Sierra please answer [here](https://apple.stackexchange.com/questions/306157/icloud-drive-sharing-on-sierra-add-people)
+
 # Application window
 ![](https://raw.githubusercontent.com/xhruso00/shareaccessforsierra/master/appWindow.png)
 
