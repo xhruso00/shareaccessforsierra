@@ -1,5 +1,7 @@
 # Share Access for Sierra
+Download https://github.com/xhruso00/shareaccessforsierra/raw/master/ShareAccessForSierra.dmg
 Simple utility that should save you some time. Instead of going to online iCloud Drive you can edit file share options from menu. For menu option, app needs to be in /Application folder
+[Download](https://github.com/xhruso00/shareaccessforsierra/raw/master/ShareAccessForSierra.dmg)
 
 ### Discussion 
 
