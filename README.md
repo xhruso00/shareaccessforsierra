@@ -3,6 +3,8 @@ Simple utility that should save you some time. Instead of going to online iCloud
 
 [Download](https://github.com/xhruso00/shareaccessforsierra/raw/master/ShareAccessForSierra.dmg)
 
+Remeber to register with Terminal using command "pluginkit -e use -i com.hrubasko.Share-Access-for-Sierra"
+
 ### Discussion 
 
 Native Share support in Finder is only available on High Sierra but the API came with Sierra. Unfortunatelly it is bit buggy (NSRemoteView crashing) but still usable. Everyone can access iCloud Drive sharing options from browser. 
