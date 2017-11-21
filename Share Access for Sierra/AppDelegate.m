@@ -16,10 +16,15 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-#ifdef DEBUG
-#else
-    system("pluginkit -e use -i com.hrubasko.Share-Access-for-Sierra");
-#endif
+//#ifdef DEBUG
+//#else
+//    system("pluginkit -e use -i com.hrubasko.Share-Access-for-Sierra");
+//#endif
+//    
+//    NSString *pluginPath = [[[NSBundle mainBundle] builtInPlugInsPath] stringByAppendingPathComponent:@"Finder Extension.appex"];
+//    NSString *pluginkitString = [NSString stringWithFormat:@"pluginkit -e use -a \"%@\"", pluginPath];
+//    system([pluginkitString cStringUsingEncoding:NSUTF8StringEncoding]);
+//    
     [self centerOnMainScreen];
     [[self window] makeKeyAndOrderFront:self];
     [NSApp activateIgnoringOtherApps:0x1];

@@ -2,7 +2,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SAWindowController : NSWindowController
+@interface SAWindowController2 : NSWindowController
 
 @property (nonatomic) NSURL *fileURL;
 

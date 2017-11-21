@@ -1,6 +1,6 @@
-#import "SAWindowController.h"
+#import "SAWindowController2.h"
 
-@interface SAWindowController () <NSSharingServiceDelegate> {
+@interface SAWindowController2 () <NSSharingServiceDelegate> {
     
 }
 @property (weak) IBOutlet NSButton *isSharedButton;
@@ -14,7 +14,7 @@
 
 @end
 
-@implementation SAWindowController
+@implementation SAWindowController2
 
 - (void)awakeFromNib
 {
@@ -33,16 +33,21 @@
 - (void)refreshInterface
 {
     NSString *path = [[self fileURL] path];
-    NSImage *iconImage = [[NSWorkspace sharedWorkspace] iconForFile:path];
-    [[self iconImageView] setImage:iconImage];
-    [[self filenameLabel] setStringValue:[path lastPathComponent]];
-    if ([self isAlreadyShared]) {
-        [self changeVisibilyOfButtonsToHidden:YES];
-        [[self isSharedButton] setState:NSOnState];
-        
+    if (path) {
+        NSImage *iconImage = [[NSWorkspace sharedWorkspace] iconForFile:path];
+        [[self iconImageView] setImage:iconImage];
+        [[self filenameLabel] setStringValue:[path lastPathComponent]];
+        if ([self isAlreadyShared]) {
+            [self changeVisibilyOfButtonsToHidden:YES];
+            [[self isSharedButton] setState:NSOnState];
+            
+        } else {
+            [self changeVisibilyOfButtonsToHidden:NO];
+            [[self isSharedButton] setState:NSOffState];
+        }
     } else {
-        [self changeVisibilyOfButtonsToHidden:NO];
-        [[self isSharedButton] setState:NSOffState];
+        [[self iconImageView] setImage:nil];
+        [[self filenameLabel] setStringValue:@"No File Selected"];
     }
     
     
@@ -83,11 +88,12 @@
     return [self window];
 }
 
-
 - (void)sharingService:(NSSharingService *)sharingService willShareItems:(NSArray *)items
 {
     if (![self isAlreadyShared]) {
+        //NASTY hack that provides incompatible delegate
         [sharingService setValue:self forKey:@"_cloudKitProvider"];
+        //NASTY Hack that prevents crashing once user interacts with Apple's sharing window
         [self performSelector:@selector(resetProvider:) withObject:sharingService afterDelay:0.2];
     }
 }
@@ -128,7 +134,7 @@
     NSError *error;
     [[self fileURL] getPromisedItemResourceValue:&isShared forKey:NSURLUbiquitousItemIsSharedKey error:&error];
     if (error) {
-        [[NSAlert alertWithError:error] runModal];
+        NSLog(@"%@",error);
     }
     return [isShared boolValue];
 }
@@ -140,3 +146,4 @@
 }
 
 @end
+

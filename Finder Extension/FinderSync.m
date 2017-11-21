@@ -1,9 +1,9 @@
 #import "FinderSync.h"
-#import "SAWindowController.h"
+#import "SAWindowController2.h"
 #import <syslog.h>
 
 @interface FinderSync () {
-    SAWindowController *_windowController;
+    SAWindowController2 *_windowController;
 }
 
 @property NSURL *myFolderURL;
@@ -74,30 +74,17 @@
         return;
     }
     if (!_windowController) {
-        _windowController = [[SAWindowController alloc] initWithWindowNibName:@"FinderSync"];
+        _windowController = [[SAWindowController2 alloc] initWithWindowNibName:@"FinderSync2"];
     }
     NSURL *fileURL;
     NSArray <NSURL *>*itemURLs = [[FIFinderSyncController defaultController] selectedItemURLs];
     if ([itemURLs count] <= 1) {
         fileURL = [itemURLs firstObject];
     }
-    
     [_windowController setFileURL:fileURL];
     dispatch_async(dispatch_get_main_queue(), ^{
             [_windowController showWindow:self];
     });
-    
-    
-    
-    
-    NSURL* target = [[FIFinderSyncController defaultController] targetedURL];
-    NSArray* items = [[FIFinderSyncController defaultController] selectedItemURLs];
-
-    NSLog(@"sampleAction: menu item: %@, target = %@, items = ", [sender title], [target filePathURL]);
-    
-    [items enumerateObjectsUsingBlock: ^(id obj, NSUInteger idx, BOOL *stop) {
-        NSLog(@"    %@", [obj filePathURL]);
-    }];
 }
 
 @end

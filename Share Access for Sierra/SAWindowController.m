@@ -34,8 +34,10 @@
 {
     NSString *path = [[self fileURL] path];
     NSImage *iconImage = [[NSWorkspace sharedWorkspace] iconForFile:path];
+    NSLog(@"11");
     [[self iconImageView] setImage:iconImage];
     [[self filenameLabel] setStringValue:[path lastPathComponent]];
+    NSLog(@"12");
     if ([self isAlreadyShared]) {
         [self changeVisibilyOfButtonsToHidden:YES];
         [[self isSharedButton] setState:NSOnState];
@@ -136,8 +138,11 @@
 
 - (void)setFileURL:(NSURL *)fileURL
 {
+    NSLog(@"010");
     _fileURL = fileURL;
+    NSLog(@"10");
     [self refreshInterface];
+    NSLog(@"20");
 }
 
 @end

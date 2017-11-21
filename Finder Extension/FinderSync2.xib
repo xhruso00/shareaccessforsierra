@@ -6,16 +6,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="SAWindowController">
+        <customObject id="-2" userLabel="File's Owner" customClass="SAWindowController2">
             <connections>
-                <outlet property="filenameLabel" destination="WRt-Ju-Pfr" id="9hy-RA-CQ5"/>
-                <outlet property="iconImageView" destination="XYT-qn-btl" id="VLd-r9-Y7X"/>
-                <outlet property="isSharedButton" destination="lv9-QJ-xMu" id="5lC-nL-YtQ"/>
-                <outlet property="privateButton" destination="sST-Hg-rL9" id="Qd3-t0-RBy"/>
-                <outlet property="publicButton" destination="uNH-Bh-SDi" id="eOI-7M-5FV"/>
-                <outlet property="readOnlyButton" destination="vFa-R6-BbY" id="bwn-Pw-foJ"/>
-                <outlet property="readWriteButton" destination="czI-11-GDU" id="Pdt-XL-2ha"/>
-                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="filenameLabel" destination="WRt-Ju-Pfr" id="NsF-B5-1ud"/>
+                <outlet property="iconImageView" destination="XYT-qn-btl" id="Iq3-ze-6RJ"/>
+                <outlet property="isSharedButton" destination="lv9-QJ-xMu" id="a3U-FF-UPD"/>
+                <outlet property="privateButton" destination="sST-Hg-rL9" id="tCG-Pm-Fe2"/>
+                <outlet property="publicButton" destination="uNH-Bh-SDi" id="QsU-Jj-YHm"/>
+                <outlet property="readOnlyButton" destination="vFa-R6-BbY" id="5Ef-mc-Ydl"/>
+                <outlet property="readWriteButton" destination="czI-11-GDU" id="pme-14-hr3"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="fPG-4k-1IC"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -51,7 +51,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="changeShareOptions:" target="-2" id="h2q-hP-DF2"/>
+                            <action selector="changeShareOptions:" target="-2" id="KLy-NW-NuC"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sST-Hg-rL9">
@@ -62,7 +62,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="changeShareOptions:" target="-2" id="yPn-hW-VBn"/>
+                            <action selector="changeShareOptions:" target="-2" id="ZhK-b3-vLt"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFa-R6-BbY">
@@ -73,7 +73,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="changeSharePermissions:" target="-2" id="55i-9J-2Iz"/>
+                            <action selector="changeSharePermissions:" target="-2" id="NNG-O5-6yB"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czI-11-GDU">
@@ -84,7 +84,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="changeSharePermissions:" target="-2" id="UxZ-2b-g5m"/>
+                            <action selector="changeSharePermissions:" target="-2" id="jCG-k5-a6n"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Kv-qP-ncE">
@@ -95,7 +95,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="share:" target="-2" id="0N1-7h-9kI"/>
+                            <action selector="share:" target="-2" id="XgW-sl-gTP"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lv9-QJ-xMu">
@@ -108,9 +108,6 @@
                     </button>
                 </subviews>
             </view>
-            <connections>
-                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
-            </connections>
             <point key="canvasLocation" x="127" y="98"/>
         </window>
     </objects>

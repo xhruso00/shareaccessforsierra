@@ -17,8 +17,8 @@
 		D2BA25E91FC1D4C4002C0CD0 /* FinderSync.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA25E81FC1D4C4002C0CD0 /* FinderSync.m */; };
 		D2BA25EE1FC1D4C4002C0CD0 /* Finder Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2BA25E51FC1D4C4002C0CD0 /* Finder Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D2BA25F51FC1D575002C0CD0 /* SMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA25F41FC1D575002C0CD0 /* SMImageView.m */; };
-		D2BA25FC1FC1D995002C0CD0 /* SAWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA25FA1FC1D995002C0CD0 /* SAWindowController.m */; };
-		D2BA25FD1FC1D995002C0CD0 /* FinderSync.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA25FB1FC1D995002C0CD0 /* FinderSync.xib */; };
+		D2BA25FC1FC1D995002C0CD0 /* SAWindowController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA25FA1FC1D995002C0CD0 /* SAWindowController2.m */; };
+		D2BA25FD1FC1D995002C0CD0 /* FinderSync2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA25FB1FC1D995002C0CD0 /* FinderSync2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,7 @@
 		D22FE6A41FC2F156001DDA49 /* SAWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWindowController.m; sourceTree = "<group>"; };
 		D22FE6A51FC2F157001DDA49 /* FinderSync.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinderSync.xib; sourceTree = "<group>"; };
 		D237A43B1FC338FA001C9BD6 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		D237A43D1FC348FF001C9BD6 /* Finder Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Finder Extension.entitlements"; sourceTree = "<group>"; };
 		D2BA25CD1FC1D48D002C0CD0 /* Share Access for Sierra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Share Access for Sierra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BA25D01FC1D48D002C0CD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2BA25D11FC1D48D002C0CD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,12 +63,11 @@
 		D2BA25E71FC1D4C4002C0CD0 /* FinderSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderSync.h; sourceTree = "<group>"; };
 		D2BA25E81FC1D4C4002C0CD0 /* FinderSync.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderSync.m; sourceTree = "<group>"; };
 		D2BA25EA1FC1D4C4002C0CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2BA25EB1FC1D4C4002C0CD0 /* Finder_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finder_Extension.entitlements; sourceTree = "<group>"; };
 		D2BA25F31FC1D575002C0CD0 /* SMImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMImageView.h; sourceTree = "<group>"; };
 		D2BA25F41FC1D575002C0CD0 /* SMImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMImageView.m; sourceTree = "<group>"; };
-		D2BA25F91FC1D995002C0CD0 /* SAWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAWindowController.h; sourceTree = "<group>"; };
-		D2BA25FA1FC1D995002C0CD0 /* SAWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAWindowController.m; sourceTree = "<group>"; };
-		D2BA25FB1FC1D995002C0CD0 /* FinderSync.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinderSync.xib; sourceTree = "<group>"; };
+		D2BA25F91FC1D995002C0CD0 /* SAWindowController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAWindowController2.h; sourceTree = "<group>"; };
+		D2BA25FA1FC1D995002C0CD0 /* SAWindowController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAWindowController2.m; sourceTree = "<group>"; };
+		D2BA25FB1FC1D995002C0CD0 /* FinderSync2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinderSync2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +129,13 @@
 		D2BA25E61FC1D4C4002C0CD0 /* Finder Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D237A43D1FC348FF001C9BD6 /* Finder Extension.entitlements */,
 				D2BA25E71FC1D4C4002C0CD0 /* FinderSync.h */,
 				D2BA25E81FC1D4C4002C0CD0 /* FinderSync.m */,
-				D2BA25F91FC1D995002C0CD0 /* SAWindowController.h */,
-				D2BA25FA1FC1D995002C0CD0 /* SAWindowController.m */,
-				D2BA25FB1FC1D995002C0CD0 /* FinderSync.xib */,
+				D2BA25F91FC1D995002C0CD0 /* SAWindowController2.h */,
+				D2BA25FA1FC1D995002C0CD0 /* SAWindowController2.m */,
+				D2BA25FB1FC1D995002C0CD0 /* FinderSync2.xib */,
 				D2BA25EA1FC1D4C4002C0CD0 /* Info.plist */,
-				D2BA25EB1FC1D4C4002C0CD0 /* Finder_Extension.entitlements */,
 			);
 			path = "Finder Extension";
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -202,7 +202,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -243,7 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2BA25FD1FC1D995002C0CD0 /* FinderSync.xib in Resources */,
+				D2BA25FD1FC1D995002C0CD0 /* FinderSync2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BA25E91FC1D4C4002C0CD0 /* FinderSync.m in Sources */,
-				D2BA25FC1FC1D995002C0CD0 /* SAWindowController.m in Sources */,
+				D2BA25FC1FC1D995002C0CD0 /* SAWindowController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +430,7 @@
 		D2BA25F01FC1D4C4002C0CD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Finder Extension/Finder Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BXQ2LHBD6T;
@@ -444,6 +445,7 @@
 		D2BA25F11FC1D4C4002C0CD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Finder Extension/Finder Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BXQ2LHBD6T;
